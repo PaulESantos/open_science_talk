@@ -1,3 +1,2 @@
-Rendered slides [here](https://alison.netlify.com/uo-tidy-bakeoff)
+Rendered slides repo [here](https://github.com/PaulESantos/open_science_talk)
 
-Repo [here](/uo-tidy-bakeoff)
