@@ -500,3 +500,55 @@ include_graphics("img/ferm_horn_moss.png")
 ```{r echo=FALSE, out.height=500, out.width=600}
 include_graphics("img/simova.png")
 ```
+---
+## [Open Traits](http://opentraits.org/)
+
+```{r echo=FALSE, out.height=450, out.width=450}
+include_graphics("img/opentraits.png")
+```
+
+---
+## Open Traits - Objetivos
+ 
+> ### 1. Desarrollo de bases de datos estandarizadas.
+--
+
+> ### 2. Desarrollar herramientas y técnicas de código abierto para recopilar, limpiar, curar y analizar datos.
+--
+
+> ### 3. Desarrollar métodos para la priorización del muestreo.
+--
+
+> ### 4. Fomentar la colaboración entre los investigadores.
+---
+## Plant O Matic: A	dynamic	and	mobile	field	guide to	all	plants	of	the	Americas
+.pull- left[
+ Greg Goldsmith
+```{r echo=FALSE, out.height=450, out.width=450}
+include_graphics("img/greg.png")
+```
+]
+.pull-right[
+```{r echo=FALSE, out.height=450, out.width=450}
+include_graphics("img/pomatic.png")
+```
+]
+
+Goldsmith	et	al.	(2016)	Methods	in	Ecology	and	Evolution
+---
+class: center, middle, inverse
+
+## [Global Tree Search](http://www.bgci.org/global_tree_search.php?sec=globaltreesearch)
+
+```{r echo=FALSE, out.height=450, out.width=450}
+include_graphics("img/global_tree.jpg")
+```
+
+---
+class: center, middle, inverse
+
+## [DRYAD](https://datadryad.org/)
+
+```{r echo=FALSE}
+include_graphics("img/dryad_logo.png")
+```
