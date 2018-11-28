@@ -1,7 +1,8 @@
 ---
-title: "Open Science  and Open tools"
-subtitle: "Data Science - Una Herramienta para la Biologia"
-author: 'Paul E. Santos Andrade. <br> Biologo & Data Scientist <br><br> <a href="https://github.com/PaulESantos"><i class="fa fa-github fa-fw"></i>&nbsp; PaulESantos</a><br> <a href="https://twitter.com/PaulEfrenSantos"> <i class="fa fa-twitter fa-fw"></i>&nbsp; @PaulEfrenSantos</a><br> <a href="https://paulefrensa.rbind.io"><i class="fa fa-envelope fa-fw"></i>&nbsp; paulefrensa.rbind.io</a><br>'
+title: "Reproducibility and Open tools"
+subtitle: "Data Science: Una Herramienta para la Biología"
+author: 'Paul E. Santos Andrade. <br> Biólogo & Data Scientist <br><br> <a href="https://github.com/PaulESantos"><i class="fa fa-github fa-fw"></i>&nbsp; PaulESantos</a><br> <a href="https://twitter.com/PaulEfrenSantos"> <i class="fa fa-twitter fa-fw"></i>&nbsp; @PaulEfrenSantos</a><br> <a href="https://paulefrensa.rbind.io"><i class="fa fa-sign-in fa-fw"></i>&nbsp; paulefrensa.rbind.io</a><br>'
+date: "Cusco, 29 Noviembre 2018"
 output:
   xaringan::moon_reader:
     css: ["default", "css/my-theme.css", "css/my-fonts.css"]
@@ -26,17 +27,17 @@ library(knitr)
 
 class:middle, inverse, center
 
-# Andes Biodiversity and Ecosystem Research Group - [ABERG](http://www.andesconservation.org/)
+## Andes Biodiversity and Ecosystem Research Group - [ABERG](http://www.andesconservation.org/)
 
-### Using the Andes-Amazon gradient as a laboratory for understanding global change
+> Using the Andes to Amazon gradient as a laboratory for understanding global change.
 
 ```{r echo = FALSE}
 knitr::include_graphics("img/trocha.jpg")
 ```
 ---
-
 # Temas de Interes:
-.left-column[
+
+.pull-left[
 
 - Ecologia .whisper[Funcional].
 
@@ -48,9 +49,9 @@ plot(iris)
 ```
 
 ]
-.right-column[
+.pull-right[
 ```{r echo=FALSE}
-knitr::include_graphics("img/try_cloud.jpg")
+knitr::include_graphics("img/try_cloud.png")
  iris %>%
    ggplot(aes(Sepal.Length, color = Species)) + 
    geom_density()+
@@ -72,24 +73,24 @@ class: center, middle, inverse
 ---
 class: center, middle, inverse
 
-# Climate Data Challenges in the 21st Century
+## Datos y Cambio climático. El reto del futuro.
 
 .left-column[
-## Resalta la necesidad de un nuevo enfoque para el manejo de la información.
+## Un nuevo enfoque para el manejo de la información.
 
 [Climate Data Challenges in the 21st Century](http://science.sciencemag.org/content/331/6018/700)
 
 ]
 .right-column[
-```{r echo=FALSE}
+```{r echo=FALSE, out.height=450, out.width=600}
 include_graphics("img/data_challenge.png")
 ```
 ]
 
 ---
+class: center, middle, inverse
 # Biodiversidad
 
-**Global Biodiversity Information Facility** [CBIF](https://www.gbif.org/)
 
 .left-column[
 ```{r echo=FALSE}
@@ -97,10 +98,14 @@ include_graphics("img/logo_gbif.png")
 ```
 
 
- **Es una red internacional, busca proporcionar a cualquier persona, en cualquier lugar, acceso abierto a datos sobre todos los organismos vivos de la Tierra.**
+### Acceso abierto a datos de ocurrencia de los organismos vivos.
+ 
+**Global Biodiversity Information Facility** [CBIF](https://www.gbif.org/)
+
 ]
+
 .right-column[
-```{r echo=FALSE}
+```{r echo=FALSE, out.height=450, out.width=600}
 include_graphics("img/biodiversity.png")
 ```
 ]
@@ -109,7 +114,7 @@ class: center, middle, inverse
 
 ## **GBIF - Perú**
 
-```{r echo=FALSE}
+```{r echo=FALSE, out.height = 400, out.width=350}
 include_graphics("img/peru_gbif.png")
 ```
 ---
@@ -119,7 +124,7 @@ class:center, middle, inverse
  
 ![](img/try.png)
 
-```{r echo=FALSE}
+```{r echo=FALSE, out.height=450, out.width=600}
 include_graphics("img/tryperf.jpg")
 ```
 [www.try-db.org](https://www.try-db.org)
@@ -127,28 +132,22 @@ include_graphics("img/tryperf.jpg")
 class: center, middle, inverse
 #`r emo::ji("question")`
 
-> # .shout[Tenemos las habilidades para colectar más datos?]
+> # .shout[Tenemos las habilidades necesarias para colectar más datos?]
 
 ---
 class: center, middle, inverse
 
 #`r emo::ji("wood")`
 
-.left-column[
-```{r echo=FALSE}
+.pull-left[
+```{r echo=FALSE, out.height=400, out.width=450}
 include_graphics("img/leafspectra.jpg")
 ```
 
-```{r echo=FALSE}
-include_graphics("img/book4.jpg")
-```
 ]
-.right-column[
-```{r echo=FALSE}
-include_graphics("img/book3.jpg")
-```
+.pull-right[
 
-```{r echo=FALSE}
+```{r echo=FALSE, out.height=400, out.width=450}
 include_graphics("img/efrali.jpg")
 ```
 ]
@@ -156,14 +155,406 @@ include_graphics("img/efrali.jpg")
 ---
 class: center, middle, inverse
 
-#`r emo::ji("notebook")`
+#`r emo::ji("question")`
 
 > # .whisper[Sabemos cómo manejar esta información?]
 
 ---
 class: center, middle, inverse
 
-# .whisper[NO!]
+#`r emo::ji("document")`
 
-# .whisper[Destinamos tiempo a pensar como colectar información, pero a no al como administrala.]
+```{r echo=FALSE, out.height=450}
+include_graphics("img/book4.jpg")
+```
+---
+class: center, middle, inverse
+
+```{r echo=FALSE, out.height = 450}
+include_graphics("img/sorprende.jpg")
+```
+
+#`r emo::ji("fear")`
+
+
+---
+class: center, middle, inverse
+
+#`r emo::ji("notebook")`
+
+```{r echo=FALSE}
+include_graphics("img/book3.jpg")
+```
+
+---
+class: center, middle, inverse
+
+# .shout[NO!] `r emo::ji("scream")`
+
+> # .whisper["Destinamos tiempo para colectar información, pero no al como administrala.]
+
+
+---
+
+
+.pull-left[
+ 
+## Excel
+ 
+```{r echo=FALSE, out.height= 350, out.width=350}
+include_graphics("img/excel_logo.png")
+```
+
+]
+.pull-right[
+
+## Formato libre
+
+```{r echo=FALSE, out.height=350, out.width=350}
+include_graphics("img/cvs.png")
+```
+]
+
+
+---
+class: center, middle, inverse
+#`r emo::ji("tool")`
+
+> ## Utilizamos las herramientas que conocemos, no las que necesitamos.
+
+---
+class: center, middle, inverse
+
+## Nuestros errores.
+
+### Excel
+
+> ## "Pensamos en este como un cuaderno de campo y no como una forma de registrar datos para la posteridad, para futuras aplicaciones."
+
+### .shout[Christie Bahlai]
+
+---
+class: center, middle, inverse
+
+```{r, echo=FALSE, out.height= 500, out.width=700}
+include_graphics("img/rect_1.png")
+```
+
+---
+class: center, middle, inverse
+
+# Data Science 
+
+### Ciencia de Datos
+
+#`r emo::ji("question")`
+---
+class: center, middle, inverse
+
+### Data Science - Ciencia de Datos
+
+> ## "Es una disciplina emocionante que nos permite generar conocimiento tomando como base los datos sin procesar"
+
+### [Hadley Wickham & Garrett Grolemund](https://r4ds.had.co.nz)
+
+---
+class: center, middle, inverse
+
+### Data Science - Ciencia de Datos
+
+> ## "La capacidad de utilizar los  datos .shout[(poder entenderlos, procesarlos, extraer información de ellos, visualizarlos, comunicarlos)] será una habilidad muy importante en las próximas décadas".
+
+[www.mckinsey.com/industries/high-tech/our-insights/hal-varian-on-how-the-web-challenges-managers.](https://www.mckinsey.com/industries/high-tech/our-insights/hal-varian-on-how-the-web-challenges-managers.)
+---
+
+
+```{r echo=FALSE, out.height=500, out.width=500}
+include_graphics("img/time_robinson.png")
+```
+[https://twitter.com/drob/status/987436677026254848](https://twitter.com/drob/status/987436677026254848)
+
+---
+class: center, middle, inverse
+
+# Tidy Data
+```{r echo=FALSE, out.width=550, out.height=350}
+include_graphics("img/hadley.png")
+```
+
+
+[Hadley Wickham, 2014](file:///C:/Users/Paul%20Efren/Downloads/v59i10.pdf)
+
+---
+class: center, middle, inverse
+
+## How to Share Data for Collaboration
+
+```{r echo = FALSE, out.height=350, out.width=600}
+include_graphics("img/share_data.png")
+```
+
+[Shannon E. Ellis & Jeffrey T. Leek](https://peerj.com/preprints/3139/)
+---
+class: center, middle, inverse
+
+## Data Organization in Spreadsheets
+
+```{r echo=FALSE, out.height=350, out.width=600}
+include_graphics("img/karl_kara.png")
+```
+
+
+[Karl W. Broman & Kara H. Woo, 2018](https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375989)
+
+
+---
+class: center, middle, inverse
+
+
+### Cada .shout[columna] una .whisper[variable].
+### Cada .shout[fila] una .whisper[obserbación].
+### Cada .shout[celda] un unico .whisper[valor].
+
+```{r echo=FALSE, out.height= 350, out.width= 600}
+include_graphics("img/tidy-1.png")
+```
+---
+class: center, middle, inverse
+
+## .shout[Open Tools]
+
+> ###  Son herramientas de software que están disponibles gratuitamente sin una licencia comercial.
+  
+  ## `r emo::ji("screen")`
+
+---
+
+```{r echo=FALSE, out.height=200, out.width=350}
+include_graphics("img/rlogo.png")
+```
+
+```{r echo=FALSE, out.height=250, out.width=450}
+include_graphics("img/rstudio.png")
+```
+
+### [R](https://cran.r-project.org/) and [RStudio](https://www.rstudio.com/)
+
+---
+
+```{r echo=FALSE, out.height=500, out.width=500}
+include_graphics("img/package.png")
+```
+---
+
+```{r echo=FALSE, out.height=200, out.width=450}
+
+include_graphics("img/python.png")
+```
+
+```{r echo=FALSE, out.height=300, out.width=350}
+
+include_graphics("img/jupyter.png")
+```
+
+
+### [Python](https://www.python.org/) and [Jupyter Notebook](http://jupyter.org/)
+
+---
+## .whisper[Git] - .whisper[GitHub] - .whisper[Bitbucket]
+
+```{r echo=FALSE}
+
+include_graphics("img/git_github.png")
+```
+
+```{r echo=FALSE}
+include_graphics("img/bitbucket_logo.png")
+```
+---
+
+## .shout[Fungal Trait]
+
+.pull-left[
+### .whisper[Genes y Química]
+### .whisper[Micorrizas]
+### .whisper[Patógenos]
+### .whisper[Taxonomía]
+### .whisper[3591 spp.]
+]
+.pull-right[
+
+```{r echo=FALSE}
+include_graphics("img/fungaltraits.png")
+```
+]
+---
+class: center, middle, inverse
+
+### .shout[PHYLACINE]: The Phylogenetic Atlas of Mammal Macroecology
+
+.pull-left[
+### .whisper[IUCN]
+### .whisper[Rangos]
+### .whisper[Filogenia]
+### .whisper[Endemismos]
+### .whisper[Peso - Dieta]
+]
+.pull-right[
+
+```{r echo=FALSE}
+include_graphics("img/phylacine.png")
+```
+]
+
+---
+class: center, middle, inverse
+
+### .shout[COMPADRE(3.2.1)] - .shout[COMADRE(1.0.0)]:
+
+.whisper[Plant and Animal Matrix Data base]
+
+.whisper[Matrices espaciales.]-.whisper[Demografia.]-.whisper[Historia evolutiva.]
+
+
+```{r echo=FALSE, out.height=450, out.width=600}
+include_graphics("img/compacoma.jpg")
+```
+
+---
+class: center, middle, inverse
+
+## .shout[TRY: Plant Trait Database]
+
+# `r emo::ji("leaf")`
+
+> ### Características morfológicas, fisiológicas y fenológicas de las plantas.
+
+```{r echo=FALSE}
+include_graphics("img/try.png")
+```
+
+[www.try-db.org](https://www.try-db.org/)
+
+---
+class: center, middle, inverse
+
+### .shout[TRY: Plant Trait Database]
+
+```{r echo=FALSE, out.height=450, out.width=800}
+include_graphics("img/try_map.jpg")
+```
+
+---
+class: center, middle, inverse
+
+## .shout[FRED: Fine-Root Ecology Database]
+
+```{r echo=FALSE, out.height=450, out.width=700}
+include_graphics("img/fred_trait.png")
+```
+
+[FRED](https://roots.ornl.gov/)
+
+---
+class: center, middle, inverse
+
+### .shout[FRED: Fine-Root Ecology Database]
+
+```{r echo=FALSE, out.height=450, out.width=700}
+include_graphics("img/fred_map.png")
+```
+
+---
+
+```{r echo=FALSE}
+include_graphics("img/bien_logo.png")
+```
+
+```{r echo=FALSE, out.height=450, out.width=700}
+include_graphics("img/bien.png")
+```
+---
+### Riqueza de especies
+.pull-left[
+Angiospermas
+```{r echo=FALSE, out.height=450, out.width=700}
+include_graphics("img/angyosper.png")
+```
+]
+
+.pull-right[
+Gimnospermas
+```{r echo=FALSE, out.height=450, out.width=700}
+include_graphics("img/gymnospema.png")
+```
+]
+---
+
+### Riqueza de especies
+```{r echo=FALSE, out.height=450, out.width=800}
+include_graphics("img/ferm_horn_moss.png")
+```
+---
+.whisper[Simova I. et.al, 2018]
+
+```{r echo=FALSE, out.height=500, out.width=600}
+include_graphics("img/simova.png")
+```
+
+---
+## [Open Traits](http://opentraits.org/)
+
+```{r echo=FALSE, out.height=450, out.width=450}
+include_graphics("img/opentraits.png")
+```
+
+---
+## Open Traits - Objetivos
+ 
+> ### 1. Desarrollo de bases de datos estandarizadas.
+
+--
+
+> ### 2. Desarrollar herramientas y técnicas de código abierto para recopilar, limpiar, curar y analizar datos.
+
+--
+
+> ### 3. Desarrollar métodos para la priorización del muestreo.
+
+--
+
+> ### 4. Fomentar la colaboración entre los investigadores.
+
+---
+## Plant O Matic: A	dynamic	and	mobile	field	guide to	all	plants	of	the	Americas
+.pull- left[
+ Greg Goldsmith
+```{r echo=FALSE, out.height=450, out.width=450}
+include_graphics("img/greg.png")
+```
+]
+.pull-right[
+```{r echo=FALSE, out.height=450, out.width=450}
+include_graphics("img/pomatic.png")
+```
+]
+
+Goldsmith	et	al.	(2016)	Methods	in	Ecology	and	Evolution
+---
+class: center, middle, inverse
+
+## [Global Tree Search](http://www.bgci.org/global_tree_search.php?sec=globaltreesearch)
+
+```{r echo=FALSE, out.height=450, out.width=450}
+include_graphics("img/global_tree.jpg")
+```
+
+---
+class: center, middle, inverse
+
+## [DRYAD](https://datadryad.org/)
+
+```{r echo=FALSE}
+include_graphics("img/dryad_logo.png")
+```
 
